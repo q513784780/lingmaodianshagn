@@ -46,6 +46,7 @@ export default {
 <style lang="scss" scoped>
 .xiangqing{
     margin-top: 0.5rem;
+    margin-bottom: 0.45rem;
     font-size: 0.16rem;
     p{
         margin-left: 0.2rem;
@@ -62,6 +63,7 @@ export default {
         }
         h3{
             padding-left: 0.2rem;
+            font-size: 0.14rem;
         }
     }
     .eg{

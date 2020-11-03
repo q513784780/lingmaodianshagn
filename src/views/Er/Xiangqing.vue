@@ -1,237 +1,117 @@
 <template>
   <div class="xiangqing" >
       <Top></Top>
-      <div class="bos" :key="menukey">
+      <div class="bos" v-for="data in array" :key="data.id">
         <div class="contant">
             <div class="clicer"></div>
             <h3>项目介绍</h3>
         </div>
-        <p>{{text}}</p>
-        <div class="contant">
+        <p>{{data.text}}</p>
+        <div class="contant" >
             <div class="clicer"></div>
             <h3>设计欣赏</h3>
         </div>
 
-        <div class="eg" >
-            <img :src="imagea" alt="">
-            <img :src="imageb" alt="">
-            <img :src="imagec" alt="">
-            <img :src="imaged" alt="">
-            <img :src="imagee" alt="">
-            <img :src="imagef" alt="">
-            <img :src="imageg" alt="">
-            <img :src="imageh" alt="">
-            <img :src="imagei" alt="">
-            <img :src="imagej" alt="">
-            <img :src="imagek" alt="">
-            <img :src="imagel" alt="">
-            <img :src="imagem" alt="">
-            <img :src="imagen" alt="">
-            <img :src="imageo" alt="">
-            <img :src="imagep" alt="">
-            <img :src="imageq" alt="">
-            <img :src="imager" alt="">
-            <img :src="images" alt="">
-            <img :src="imaget" alt="">
-            <img :src="imageu" alt="">
-            <img :src="imagev" alt="">
-            <img :src="imagew" alt="">
-            <img :src="imagex" alt="">
-            <img :src="imagey" alt="">
-            <img :src="imagez" alt="">
-            <img :src="imageaa" alt="">
-            <img :src="imagebb" alt="">
-            <img :src="imagecc" alt="">
-            <img :src="imagedd" alt="">
-            <img :src="imageee" alt="">
-            <img :src="imageff" alt="">
-            <img :src="imagegg" alt="">
-            <img :src="imagehh" alt="">
-            <img :src="imageii" alt="">
-            <img :src="imagejj" alt="">
-            <img :src="imagekk" alt="">
-            <img :src="imagell" alt="">
-            <img :src="imagemm" alt="">
-            <img :src="imagenn" alt="">
-            <img :src="imageoo" alt="">
-            <img :src="imagepp" alt="">
-            <img :src="imageqq" alt="">
-            <img :src="imagerr" alt="">
-            <img :src="imagess" alt="">
-            <img :src="imagett" alt="">
-            <img :src="imageuu" alt="">
-            <img :src="imagevv" alt="">
-            <img :src="imageww" alt="">
-            <img :src="imagexx" alt="">
-            <img :src="imageyy" alt="">
-            <img :src="imagezz" alt="">
+        <div class="eg"  >
+            <img :src="data.imagea" alt="">
+            <img :src="data.imageb" alt="">
+            <img :src="data.imagec" alt="">
+            <img :src="data.imaged" alt="">
+            <img :src="data.imagee" alt="">
+            <img :src="data.imagef" alt="">
+            <img :src="data.imageg" alt="">
+            <img :src="data.imageh" alt="">
+            <img :src="data.imagei" alt="">
+            <img :src="data.imagej" alt="">
+            <img :src="data.imagek" alt="">
+            <img :src="data.imagel" alt="">
+            <img :src="data.imagem" alt="">
+            <img :src="data.imagen" alt="">
+            <img :src="data.imageo" alt="">
+            <img :src="data.imagep" alt="">
+            <img :src="data.imageq" alt="">
+            <img :src="data.imager" alt="">
+            <img :src="data.images" alt="">
+            <img :src="data.imaget" alt="">
+            <img :src="data.imageu" alt="">
+            <img :src="data.imagev" alt="">
+            <img :src="data.imagew" alt="">
+            <img :src="data.imagex" alt="">
+            <img :src="data.imagey" alt="">
+            <img :src="data.imagez" alt="">
+            <img :src="data.imageaa" alt="">
+            <img :src="data.imagebb" alt="">
+            <img :src="data.imagecc" alt="">
+            <img :src="data.imagedd" alt="">
+            <img :src="data.imageee" alt="">
+            <img :src="data.imageff" alt="">
+            <img :src="data.imagegg" alt="">
+            <img :src="data.imagehh" alt="">
+            <img :src="data.imageii" alt="">
+            <img :src="data.imagejj" alt="">
+            <img :src="data.imagekk" alt="">
+            <img :src="data.imagell" alt="">
+            <img :src="data.imagemm" alt="">
+            <img :src="data.imagenn" alt="">
+            <img :src="data.imageoo" alt="">
+            <img :src="data.imagepp" alt="">
+            <img :src="data.imageqq" alt="">
+            <img :src="data.imagerr" alt="">
+            <img :src="data.imagess" alt="">
+            <img :src="data.imagett" alt="">
+            <img :src="data.imageuu" alt="">
+            <img :src="data.imagevv" alt="">
+            <img :src="data.imageww" alt="">
+            <img :src="data.imagexx" alt="">
+            <img :src="data.imageyy" alt="">
+            <img :src="data.imagezz" alt="">
         </div>
-     <Bottom></Bottom>
-
       </div>
-      
-     
-     <!-- 底部的 -->
+      <div class="bot">
+        <Bottom></Bottom>
+      </div>
+
   </div>
 </template>
 
 <script>
 import Top from '@/components/Top'
 import Bottom from '@/components/Bottom'
+import EventBus from '@/eventBus.js'
+
+
 export default {
     data(){
         return{
-            imagea:null,
-            imageb:null,
-            imagec:null,
-            imaged:null,
-            imagee:null,
-            imagef:null,
-            imageg:null,
-            imageh:null,
-            imagei:null,
-            imagej:null,
-            imagek:null,
-            imagel:null,
-            imagem:null,
-            imagen:null,
-            imageo:null,
-            imagep:null,
-            imageq:null,
-            imager:null,
-            images:null,
-            imaget:null,
-            imageu:null,
-            imagev:null,
-            imagew:null,
-            imagex:null,
-            imagey:null,
-            imagez:null,
-            imageaa:null,
-            imagebb:null,
-            imagecc:null,
-            imagedd:null,
-            imageee:null,
-            imageff:null,
-            imagegg:null,
-            imagehh:null,
-            imagehh:null,
-            imageii:null,
-            imagejj:null,
-            imagekk:null,
-            imagell:null,
-            imagemm:null,
-            imagenn:null,
-            imageoo:null,
-            imagepp:null,
-            imageqq:null,
-            imagerr:null,
-            imagess:null,
-            imagett:null,
-            imageuu:null,
-            imagevv:null,
-            imageww:null,
-            imagexx:null,
-            imageyy:null,
-            imagezz:null,
-            name:null,
-            text:null,
-            // isShow:true,
-            menukey:1
+            array:[]
         }
     },
     components: {
         Top,
         Bottom
     },
-    created() {
-    // console.log(this.$route.params.wangjinid,"利用id去请求接口数据")
-        this.axios({
-            url:`/fuzhuang`,
-            method:"get"
-        }).then((res)=>{
-            console.log(res.data[this.$route.params.wangjinid])
-            this.menuTree = res.data[this.$route.params.wangjinid]
-
-            var obj = res.data[this.$route.params.wangjinid]
-            for(let key in  obj){
-                this.imagea = obj.imagea
-                this.imageb = obj.imageb
-                this.imagec = obj.imagec
-                this.imaged = obj.imaged
-                this.imagee = obj.imagee
-                this.imagef = obj.imagef
-                this.imageg = obj.imageg
-                this.imageh = obj.imageh
-                this.imagei = obj.imagei
-                this.imagej = obj.imagej
-                this.imagek = obj.imagek
-                this.imagel = obj.imagel
-                this.imagem = obj.imagem
-                this.imagen = obj.imagen
-                this.imageo = obj.imageo
-                this.imagep = obj.imagep
-                this.imageq = obj.imageq
-                this.imager = obj.imager
-                this.images = obj.images
-                this.imaget = obj.imaget
-                this.imageu = obj.imageu
-                this.imagev = obj.imagev
-                this.imagew = obj.imagew
-                this.imagex = obj.imagex
-                this.imagey = obj.imagey
-                this.imagez = obj.imagez
-                this.imageaa = obj.imageaa
-                this.imagebb = obj.imagebb
-                this.imagecc = obj.imagecc
-                this.imagedd = obj.imagedd
-                this.imageee = obj.imageee
-                this.imageff = obj.imageff
-                this.imagegg = obj.imagegg
-                this.imagehh = obj.imagehh
-                this.imageii = obj.imageii
-                this.imagejj = obj.imagejj
-                this.imagekk = obj.imagekk
-                this.imagell = obj.imagell
-                this.imagemm = obj.imagemm
-                this.imagenn = obj.imagenn
-                this.imageoo = obj.imageoo
-                this.imagepp = obj.imagepp
-                this.imageqq = obj.imageqq
-                this.imagerr = obj.imagerr
-                this.imagess = obj.imagess
-                this.imagett = obj.imagett
-                this.imageuu = obj.imageuu
-                this.imagevv = obj.imagevv
-                this.imageww = obj.imageww
-                this.imagexx = obj.imagexx
-                this.imageyy = obj.imageyy
-                this.imagezz = obj.imagezz
-                this.text = obj.text
-            }
-            
-            
+    created(){
+        EventBus.$on("fuzhuang",(val)=>{
+        var data = val[this.$route.params.wangjinid]
+        var arr = []
+        arr.push(data)
+        this.array = arr
         })
     },
-    // watch:{
-    //     menuTree(){
-    //         this.isShow = false
-    //         this.$nextTick(()=>{
-    //         this.isShow = true
-    //         })
-    //     }
-    // }
-     watch:{
-            menuTree(){
-               ++this.menukey
-           }
-      }
+    destroyed(){
+        // $eventBus.$emit('fuzhuang',data)
+    EventBus.$off('fuzhuang',this.arr)
+
+    },
 }
 </script>
 <style lang="scss" scoped>
+.bot{
+    margin-bottom: 0.45rem;
+}
 .xiangqing{
    .bos{
-    // margin-top: 0.5rem;
+    // margin-top: 0.5rem;.
     position: relative;
     top: 0.5rem;
     left: 0;
@@ -253,6 +133,7 @@ export default {
         }
         h3{
             padding-left: 0.2rem;
+            font-size: 0.14rem;
         }
     }
     .eg{
@@ -260,6 +141,7 @@ export default {
         height: auto;
         margin: 0 auto;
         font-size: 0;
+        margin-bottom: 0.5rem;
         img{
             width: 100%;
             height: 100%;
@@ -267,6 +149,5 @@ export default {
     }
    }
 }
-// 底部的
 </style>
 

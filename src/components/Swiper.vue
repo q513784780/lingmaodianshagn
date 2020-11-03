@@ -22,8 +22,8 @@
             <p @click="zhitongche"><span class="iconfont">&#xe654;</span>直通车托管</p>
             <p @click="zhuangxiu"><span class="iconfont">&#xe970;</span>网店装修</p>
             <p @click="paishe"><span class="iconfont">&#xe671;</span>产品拍摄</p>
-            <p @click="sheji">><span class="iconfont">&#xe617;</span>品牌设计</p>
-            <p @click="jianshe">><span class="iconfont">&#xe661;</span>网站建设</p>
+            <p @click="sheji"><span class="iconfont">&#xe617;</span>品牌设计</p>
+            <p @click="jianshe"><span class="iconfont">&#xe661;</span>网站建设</p>
         
           </div>
         </div>
@@ -32,21 +32,20 @@
     </div>
     <!-- 轮播图 -->
     <div class="banner">
-      <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/image/_gongyi.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/jjx.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/fangxinxiaofei.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/yeweibao.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/gybanner.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/wzry.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/jpen.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/deguo.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/longhai123.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/wallpaper12.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/wallpaper10.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/wallpaper1_2.jpg" alt=""></van-swipe-item>
-        <van-swipe-item><img src="http://www.lingmaodianshang.com/templets/Images/wallpaper1_3.jpg" alt=""></van-swipe-item>
-        
+      <van-swipe class="my-swipe" :autoplay="5000" indicator-color="#049483">
+        <van-swipe-item><img src="@/assets/12.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/11.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/09.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/08.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/13.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/10.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/07.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/06.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/05.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/04.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/03.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/02.jpg" alt=""></van-swipe-item>
+        <van-swipe-item><img src="@/assets/01.jpg" alt=""></van-swipe-item>
       </van-swipe>
     </div>
 
@@ -110,7 +109,7 @@ export default {
   clip-path: polygon(0 0, 100% 0,100% 100%,0 calc(100% - 20px));
   img{
     width: 0.8rem;
-    height: 0.8rem;
+    height: 1.2rem;
     padding-top: 0.45rem;
   }
 }
@@ -164,8 +163,9 @@ export default {
   margin-top: 0.5rem;
 }
 .my-swipe{
-  height: 3rem;
-  width: 100%;
+  height: 2.2rem;
+  width: 98%;
+  margin: 0 auto;
   img{
     width: 100%;
     height: 100%;

@@ -10,9 +10,7 @@
             <router-link to="problem"><span>常见问题</span></router-link>
             <router-link to="point"><span>灵猫观点</span></router-link>
         </div>
-        <keep-alive>
             <router-view></router-view>
-        </keep-alive>
     </div>
 </template>
 <script>    
@@ -45,7 +43,7 @@ export default {
     width: 100%;
     height: 1rem;
     position: fixed;
-    top: 0.5rem;
+    top: 0.1rem;
     left: 0;
     img{
         width: 100%;
@@ -70,12 +68,15 @@ export default {
     font-size:0.16rem;
     height: 0.2rem;
     margin: 0.3rem 0.05rem;
+    text-decoration:none;
   }
 .router-link-active span{
     // font-size: 0.18rem;
     // font-weight: 700;
     color: #049483;
     border-bottom: 2px solid orange;
+    font-size: 0.18rem;
+    font-weight: 700;
 }
 
 
@@ -98,12 +99,15 @@ export default {
     font-size:0.16rem;
     height: 0.2rem;
     margin: 0.3rem 0.05rem;
+    text-decoration:none;
   }
 .router-link-active span{
     // font-size: 0.18rem;
     // font-weight: 700;
     color: #049483;
-    border-bottom: 2px solid orange;
+    // border-bottom: 2px solid orange;
+    font-size: 0.18rem;
+    font-weight: 700;
     
 }
 

@@ -3,10 +3,9 @@
       <Top></Top>
 
     <div class="contant">
-        <img src="http://www.lingmaodianshang.com/templets/1000zhu/newimg/img/zhibotuoguan/11.jpg" alt="">
-        
+        <img src="@/assets/zhibo.jpg" alt=""> 
+      <Bottom></Bottom>
     </div>
-     <Bottom></Bottom>
 
     
   </div>
@@ -27,6 +26,7 @@ export default {
 .contant{
     font-size: 0;
     margin-top: 0.5rem;
+    margin-bottom: 0.45rem;
 }
 img{
     width: 100%;

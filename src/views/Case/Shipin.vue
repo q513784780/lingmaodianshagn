@@ -1,6 +1,6 @@
 <template>
   <div>
-   <div class="center" v-for="data in arr" :key="data.image" >
+   <div class="center" v-for="data in arr" :key="data.image"  @click="fun()" >
       <div class="image" @click="handleClick(data.id)">
           <img :src="data.image" alt="">
       </div>   
@@ -16,6 +16,7 @@
 
 <script>
 // import Tabbar from '@/components/Tabbar'
+import eventBus from '@/eventBus.js'
 export default {
     data(){
     return{
@@ -30,15 +31,21 @@ export default {
           url:"/shipin",
           method:"get"
       }).then((res)=>{
-          // console.log(res.data)
           this.arr = res.data
       })
   },
   methods: {
     handleClick (id) {
       // console.log(id)
-      this.$router.push(`/xiangqingshipin/${id}`) // 切换页面
+      this.$router.push(`/xiangqing/${id}`) // 切换页面
+    },
+    fun(){
+      eventBus.$emit("fuzhuang",this.arr)
+      // console.log(this.arr)
     }
+  },
+  beforeDestroy() {
+      eventBus.$emit("fuzhuang",this.arr)
   },
   components: {
     // Tabbar

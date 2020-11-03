@@ -1,21 +1,18 @@
 <template>
   <div id="app">
-    <keep-alive>
     <!-- <transition name="app" mode="out-in"> -->
       <router-view></router-view>
     <!-- </transition> -->
-
-    </keep-alive>
-    <!-- <Tabbar></Tabbar> -->
+    <Tabbar></Tabbar>
   </div>
 </template>
 
 <script>
-// import Tabbar from '@/components/Tabbar'
+import Tabbar from '@/components/Tabbar'
 
 export default {
   components: {
-    // Tabbar
+    Tabbar
   }
 }
 </script>

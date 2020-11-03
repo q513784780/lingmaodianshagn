@@ -3,7 +3,7 @@
       <Top></Top>
 
     <div class="contant">
-        <img src="http://www.lingmaodianshang.com/templets/1000zhu/newimg/img/zhitongche/ztc_banner.jpg" alt="">
+        <!-- <img src="http://www.lingmaodianshang.com/templets/1000zhu/newimg/img/zhitongche/ztc_banner.jpg" alt="">
         <div class="text">
              <p>灵猫电商--您的托管专家</p>
             <h2>精准锁定目标人群·合理调整排名出价</h2>
@@ -18,9 +18,10 @@
         <img src="http://www.lingmaodianshang.com/templets/1000zhu/newimg/img/zhitongche/client_1.jpg" alt="">
         <img src="http://www.lingmaodianshang.com/templets/1000zhu/newimg/img/zhitongche/ztc_10.jpg" alt="">
         <img src="http://www.lingmaodianshang.com/templets/1000zhu/newimg/img/zhitongche/ztc_11.jpg" alt="">
-        <img src="http://www.lingmaodianshang.com/templets/1000zhu/newimg/img/zhitongche/ztc_12.jpg" alt="">
+        <img src="http://www.lingmaodianshang.com/templets/1000zhu/newimg/img/zhitongche/ztc_12.jpg" alt=""> -->
+        <img src="@/assets/ztc.jpg" alt="">
+        <Bottom></Bottom>
     </div>
-     <Bottom></Bottom>
 
     
   </div>
@@ -41,11 +42,15 @@ export default {
 .contant{
     font-size: 0;
     margin-top: 0.5rem;
+    margin-bottom: 0.45rem;
     .text{
         font-size: 0.1rem;
         text-align: center;
         line-height: 0.3rem;
         margin: 0.2rem;
+        h2{
+            font-size: 0.16rem;
+        }
     }
     .kong{
         margin-bottom: 0.2rem;

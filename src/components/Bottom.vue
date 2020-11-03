@@ -4,8 +4,8 @@
           <div class="lingmao">
             <!-- <img src="@/assets/lingmao.png" alt="">
             <p class="zhaoshang">400-009-1355</p> -->
-            <img src="http://wap.lingmaodianshang.com/templets/m_img/zx32.jpg" alt="">
-            <img src="http://wap.lingmaodianshang.com/templets/m_img/zx33.jpg" alt="">
+            <!-- <img src="http://wap.lingmaodianshang.com/templets/m_img/zx32.jpg" alt="">
+            <img src="http://wap.lingmaodianshang.com/templets/m_img/zx33.jpg" alt=""> -->
             <img src="@/assets/bottom.jpg" alt="">
           </div>
       </div>

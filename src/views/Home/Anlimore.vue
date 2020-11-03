@@ -9,91 +9,12 @@
         </div>
     </div>
     <Topbar></Topbar>
-    <!-- <div class="center">
-        <div class="image">
-            <img src="http://www.lingmaodianshang.com/uploads/allimg/181128/1-1Q12P944370-L.jpg" alt="">
-            <div class="text">
-                 <p>洗碗槽详情页</p>
-            </div>
-        </div>   
-        <div class="sheji">
-            <span>设计师：刘丹</span>   <van-tag mark type="success" class="right">找她做设计</van-tag>
-        </div>   
-    </div>
+        <keep-alive>
+             <router-view ></router-view>
+        </keep-alive>
 
-    <div class="center">
-        <div class="image">
-            <img src="http://www.lingmaodianshang.com/uploads/allimg/181128/1-1Q12P939500-L.jpg" alt="">
-            <div class="text">
-                 <p>灯具首页</p>
-            </div>
-        </div>   
-        <div class="sheji">
-            <span>设计师：刘丹</span>   <van-tag mark type="success" class="right">找她做设计</van-tag>
-        </div>   
-    </div>
 
-    <div class="center">
-        <div class="image">
-            <img src="http://www.lingmaodianshang.com/uploads/allimg/181128/1-1Q12P936080-L.jpg" alt="">
-            <div class="text">
-                 <p>月见草详情页</p>
-            </div>
-        </div>   
-        <div class="sheji">
-            <span>设计师：刘丹</span>   <van-tag mark type="success" class="right">找她做设计</van-tag>
-        </div>   
-    </div>
-
-    <div class="center">
-        <div class="image">
-            <img src="http://www.lingmaodianshang.com/uploads/allimg/181128/1-1Q12P932250-L.jpg" alt="">
-            <div class="text">
-                 <p>葡萄酒详情页</p>
-            </div>
-        </div>   
-        <div class="sheji">
-            <span>设计师：刘丹</span>   <van-tag mark type="success" class="right">找她做设计</van-tag>
-        </div>   
-    </div>
-
-     <div class="center">
-        <div class="image">
-            <img src="http://www.lingmaodianshang.com/uploads/allimg/181128/1-1Q12P929590-L.jpg" alt="">
-            <div class="text">
-                 <p>护眼精华详情页</p>
-            </div>
-        </div>   
-        <div class="sheji">
-            <span>设计师：刘丹</span>   <van-tag mark type="success" class="right">找她做设计</van-tag>
-        </div>   
-    </div>
-
-    <div class="center">
-        <div class="image">
-            <img src="http://www.lingmaodianshang.com/uploads/allimg/181128/1-1Q12P923480-L.jpg" alt="">
-            <div class="text">
-                 <p>虾青素详情页</p>
-            </div>
-        </div>   
-        <div class="sheji">
-            <span>设计师：刘丹</span>   <van-tag mark type="success" class="right">找她做设计</van-tag>
-        </div>   
-    </div>
-
-    <div class="center">
-        <div class="image">
-            <img src="http://www.lingmaodianshang.com/uploads/allimg/181128/1-1Q12P919350-L.jpg" alt="">
-            <div class="text">
-                 <p>手机壳详情页</p>
-            </div>
-        </div>   
-        <div class="sheji">
-            <span>设计师：刘丹</span>   <van-tag mark type="success" class="right">找她做设计</van-tag>
-        </div>   
-    </div> -->
-
-    <Bottom></Bottom>
+    <!-- <Bottom></Bottom> -->
 
      
   </div>
@@ -101,12 +22,12 @@
 
 <script>
 import Top from '@/components/Top'
-import Bottom from '@/components/Bottom'
+// import Bottom from '@/components/Bottom'
 import Topbar from '@/components/Topbar'
 export default {
   components: {
     Top,
-    Bottom,
+    // Bottom,
     Topbar
   },
   methods:{
@@ -160,6 +81,7 @@ export default {
 .xiangqing{
     font-size: 0.16rem;
     margin-top: 0.5rem;
+    margin-bottom: 0.45rem;
     .center{
         margin-bottom: 0.2rem;
         .image{

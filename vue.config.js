@@ -42,7 +42,7 @@ module.exports = {
       // 设置代理
       proxy: {
           '/api': {
-            target: 'http://localhost:8080/', //对应自己的接口
+            target: 'http://hui.westapple.icu', //对应自己的接口
             changeOrigin: true,
             ws: true,
             pathRewrite: {

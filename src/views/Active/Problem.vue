@@ -2,21 +2,19 @@
   <div  @click="fun()" class="ttop">
         <div class="bigbox">
           <div class="box" v-for="data in arr" :key="data.id" @click="handleClick(data.id)">
+            <div class="center">
+              <h4>{{data.title}}</h4>
+            </div>
             <div class="top">
               <img :src="data.imgage" alt="">
             </div>
             <div class="center">
-              <h4>{{data.title}}</h4>
               <p>{{data.txt}}</p>
-            </div>
-            <div class="bottom" >
-              <span class="moree" >查看更多</span>
             </div>
             <div class="footer">
                <span class="iconfont">&#xe6ce;{{data.time}}</span>
-               <span class="iconfont">&#xe616;常见问题</span>
+               <span class="iconfont">&#xe616;公司新闻</span>
                <span class="iconfont">&#xe650;{{data.hot}}</span>
-               
             </div>
           </div>
         </div>
@@ -42,8 +40,10 @@ export default {
         method:"get"
     }).then((res)=>{
         this.arr = res.data
+
     })
   },
+  
   methods:{
     handleClick(id){
       this.$router.push(`/newsde/${id}`) // 切换页面
@@ -51,6 +51,9 @@ export default {
     fun(){
       eventBus.$emit("mseg",this.arr)
     }
+  },
+  beforeDestroy() {
+      eventBus.$emit("mseg",this.arr)
   }
 }
 </script>
@@ -58,6 +61,7 @@ export default {
 
 .ttop{
   margin-top: 1.9rem;
+  margin-bottom: 0.5rem;
 }
 .bigbox{
   font-size: 0.16rem;
@@ -65,10 +69,10 @@ export default {
   padding: 0.1rem 0;
   .box{
     margin: 0.1rem;
-    padding: 0.1rem 0;
+    padding: 0.03rem 0;
     background: whitesmoke;
     .top{
-      height: 2rem;
+      height: 2.2rem;
       width: 100%;
       margin: 0 auto;
        width: 95%;
@@ -78,7 +82,7 @@ export default {
       }
     }
     .center{
-      margin: 0 auto;
+      margin: 0.1rem auto;
       width: 95%;
       h3{
         overflow : hidden;
@@ -89,6 +93,16 @@ export default {
         color: #000;
         line-height: 0.3rem;
       }
+       h4{
+        font-size: 0.16rem;
+         overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;//规定几行显示省略号
+        -webkit-box-orient: vertical;
+        // line-height: 0.2rem;
+        font-weight: 600;
+      }
       p{
         overflow : hidden;
         text-overflow: ellipsis;
@@ -97,6 +111,7 @@ export default {
         -webkit-box-orient: vertical;
         color: #666;
         line-height: 0.25rem;
+        font-size: 0.12rem;
       }
     }
     .bottom{
@@ -119,7 +134,7 @@ export default {
       margin: 0 auto;
       width: 95%;
       .iconfont{
-        color: black; 
+        color: black;
       }
       span{
         padding-right: 0.3rem;

@@ -73,7 +73,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  
+.box{
+  margin-bottom: 0.45rem;
+}
 .shipintop{
   margin-top: 0.5rem;
 }

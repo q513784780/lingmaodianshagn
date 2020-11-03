@@ -11,12 +11,11 @@
             <router-link to="huazhuang"><span>化妆美容</span></router-link>
             <router-link to="xiangbao"><span>箱包</span></router-link>
             <router-link to="neiyi"><span>内衣</span></router-link>
-            <router-link to="xie"><span>鞋类</span></router-link>
-            <router-link to="jiudian"><span>酒店旅游</span></router-link>
+            <router-link to="shoes"><span>鞋类</span></router-link>
+            <router-link to="hotel"><span>酒店旅游</span></router-link>
         </div>
-        <keep-alive>
-            <router-view></router-view>
-        </keep-alive>
+
+           
     </div>
 </template>
 <script>    

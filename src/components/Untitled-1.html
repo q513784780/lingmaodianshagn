@@ -1,0 +1,71 @@
+</header> <header class="" style="z-index:999;">
+    <div style="position:fixed;top:0;left:0;z-index:99999;">
+        <div id="bpp">
+            <div  v-if="message" style="width:100%;height:3.8rem;">
+                <a href="{$banner_list['data']['advs'][0][adv_uri]}" style=""><img :src="message" style="width:120%;	"/></a>
+
+
+                <div style="display:flex;flex:1;padding:0.3rem 0.5rem;background:white;width:100%;">
+                    <a href="javascript:history.go(-1)"><i class="fa fa-chevron-left" style="font-size:0.57rem;"></i></a>
+                    <ul style="display:flex;margin:0 1rem;" >
+
+
+                        <li style="margin:0 0.5rem;">商品<>
+                        <li style="margin:0 0.5rem;">评价<>
+                        <li style="margin:0 0.5rem;">详情<>
+                    </ul>
+                    <a href="javascript:;" id="shareIcon" style="right:0.4rem"><i class="fa fa-share-alt" style="font-size:0.57rem;"></i></a>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div  v-else style="width:100%;height:90px;">
+
+
+            <div style="display:flex;flex:1;padding:0.3rem 0.5rem;background:white;width:100%;">
+                <a href="javascript:history.go(-1)"><i class="fa fa-chevron-left" style="font-size:0.57rem;"></i></a>
+                <ul style="display:flex;margin:0 1rem;" >
+
+
+                    <li style="margin:0 0.5rem;">商品<>
+                    <li style="margin:0 0.5rem;">评价<>
+                    <li style="margin:0 0.5rem;">详情<>
+                </ul>
+                <a href="javascript:;" id="shareIcon" style="right:0.4rem"><i class="fa fa-share-alt" style="font-size:0.57rem;"></i></a>
+                <span></span>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el:'#bpp',
+            data:{ /ue中的model -> 数据
+                message:'{$banner_list['data']['advs'][0]['adv_image']}'
+            }
+        })
+    </script>
+
+
+
+
+
+
+</header>

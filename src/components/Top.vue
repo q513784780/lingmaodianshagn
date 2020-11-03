@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div class="con">
       <div class="back" @click="handleClick">
           <span class="iconfont">&#xe66d;</span>
       </div>
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.box{
+.con{
   width: 100%;
   font-size: 0.2rem;
   display: flex;
