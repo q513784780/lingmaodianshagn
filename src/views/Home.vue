@@ -67,7 +67,7 @@
     <!-- 经典案列 -->
     <div class="exp">
         <div class="exptitle">
-            <h4>经典案列<span @click="anlimore">MORE</span>
+            <h4>经典案列<a href="http://www.lingmaodianshang.com/anli/"><span>MORE</span></a>
             </h4>
         </div>
         <div class="expbottom">
@@ -142,7 +142,7 @@
     </div>
     <!-- 时间轴 -->
     <div class="list">
-        <div class="icon"></div><span>灵猫动态</span><span class="more" @click="news">MORE</span></a>
+        <div class="icon"></div><span>灵猫动态</span><a href="http://www.lingmaodianshang.com/new/"><span class="more">MORE</span></a>
     </div>
     <div class="shijianzhou" v-for="data in arr.slice(0,3)" :key="data.id">
         <div class="zhanshi" @click="dianji(data.id)">
@@ -187,9 +187,9 @@
             </div>
         </div>
         <div class="footerbottom">
-            <p><span style="font-weight:900;font-size:0.12rem;">友情链接:</span>九叶蓝</p>
-            <p><span style="font-weight:900;font-size:0.12rem;">联系电话:</span>029-61682100 <span class="tousu"><span style="font-weight:900;font-size:0.12rem;;">投诉建议:</span>18392559553</span></p>
-            <p><span style="font-weight:900;font-size:0.12rem;">地址:</span>西安市雁塔区电子三路 <span class="tousu"><span style="font-weight:900;font-size:0.12rem;">版权所有:</span>西安灵猫电子科技有限公司</span></p>
+            <p><span style="font-weight:900;font-size:0.1rem;">友情链接:</span><a href="http://www.jiuyelan.com/">九叶蓝</a></p>
+            <p><span style="font-weight:900;font-size:0.1rem;">联系电话:</span>029-61682100 <span class="tousu"><span style="font-weight:900;font-size:0.1rem;;">投诉建议:</span>18392559553</span></p>
+            <p><span style="font-weight:900;font-size:0.1rem;">地址:</span>西安市雁塔区电子三路 <span class="tousu"><span style="font-weight:900;font-size:0.1rem;">版权所有:</span>西安灵猫电商</span></p>
             <div class="secuiity"><img src="@/assets/gong.png" alt="" style="margin-top:-0.05rem;"></div><span>陕ICP备19002013号-1 <span>&nbsp;</span><span class="tousu">2012-2020 All Rights Reserved</span></span>
         </div>
     </div>
